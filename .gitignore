@@ -1,0 +1,47 @@
+# Ignorar todo por defecto
+*
+
+# ======================
+# EXCEPCIONES (permitir estos archivos y carpetas)
+# ======================
+
+# Mantener carpeta de temas y el tema Modern
+!theme/
+!theme/modern/
+!theme/modern/**
+!theme/modern/**/.gitkeep
+
+# Mantener estos archivos raíz
+!.gitignore
+!README.md
+
+# ======================
+# Ignorar carpetas de datos y caché (no suben al repo)
+# ======================
+moodledata/
+localcache/
+cache/
+sessions/
+temp/
+lang/
+vendor/
+
+# ======================
+# Ignorar configuraciones sensibles
+# ======================
+config.php
+
+# ======================
+# Ignorar logs
+# ======================
+*.log
+*.txt
+
+# ======================
+# Ignorar archivos del sistema
+# ======================
+.DS_Store
+Thumbs.db
+*.bak
+*.old
+*.swp

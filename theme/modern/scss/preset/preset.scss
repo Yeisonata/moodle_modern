@@ -1,0 +1,107 @@
+/* Fuente amigable y moderna */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* Estilo animado del logo en la navbar */
+.navbar-brand::before {
+  content: "";
+  display: inline-block;
+  background: url("[[pix:theme|logo]]") no-repeat center center;
+  background-size: contain;
+  width: 260px;
+  height: 62px;
+  margin-right: 10px;
+  vertical-align: middle;
+  animation: pop-in 0.6s ease-out;
+}
+
+/* Animación para el logo */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Nombre del sitio */
+.navbar .navbar-brand.aabtn {
+  color: #009B37 !important; /* Verde fresco */
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar general */
+.navbar {
+  background: linear-gradient(90deg, #003566, #00509e);
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlaces del menú principal */
+.primary-navigation .navigation .nav-link {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Hover sobre enlaces */
+.primary-navigation .navigation .nav-link:hover,
+.primary-navigation .navigation .nav-link:focus {
+  color: white !important;
+  font-weight: 500;
+  transform: scale(1.05);
+}
+
+/* Estado activo */
+.primary-navigation .navigation .nav-link.active {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Enlaces enfocados */
+.primary-navigation .navigation .nav-link:focus {
+  outline: none;
+}
+
+/* Íconos del navbar */
+.navbar .usermenu,
+.navbar .nav-item .icon {
+  color: #ffffff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .usermenu:hover,
+.navbar .nav-item .icon:hover {
+  color: #ffc300 !important;
+}
+
+/* Botón de edición visible */
+#page-header .editmode-switch {
+  filter: brightness(1.1);
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: #003566;
+  font-weight: bold;
+  border: none;
+}
+
+/* Responsive navbar mejorado */
+@media (max-width: 768px) {
+  .navbar-brand::before {
+    width: 40px;
+    height: 40px;
+  }
+  .navbar .navbar-brand.aabtn {
+    font-size: 1.2rem;
+  }
+}
