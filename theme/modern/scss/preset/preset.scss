@@ -41,7 +41,10 @@ body {
 .navbar {
   background: linear-gradient(90deg, #003566, #00509e);
   padding: 0.75rem 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky; /* Se queda fijo al hacer scroll */
+  top: 0;
+  z-index: 1000;
 }
 
 /* Enlaces del menú principal */
@@ -50,9 +53,25 @@ body {
   color: #ffffff !important;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  transition: all 0.3s ease;
-  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  border-radius: 6px;
 }
+
+/* Efecto al pasar el mouse */
+.primary-navigation .navigation .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffcc00 !important;
+  transform: translateY(-2px);
+}
+
+/* Opción activa */
+.primary-navigation .navigation .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  color: #ffdd57 !important;
+  font-weight: bold;
+}
+
 
 /* Hover sobre enlaces */
 .primary-navigation .navigation .nav-link:hover,
@@ -73,12 +92,8 @@ body {
   outline: none;
 }
 
-/* Íconos del navbar */
-.navbar .usermenu,
-.navbar .nav-item .icon {
-  color: #ffffff !important;
-  transition: color 0.3s ease;
-}
+
+
 
 .navbar .usermenu:hover,
 .navbar .nav-item .icon:hover {
@@ -104,4 +119,42 @@ body {
   .navbar .navbar-brand.aabtn {
     font-size: 1.2rem;
   }
+}
+ .popover-region-toggle{
+  font-size: 20px !important;     /* Tamaño del icono */
+  color: white !important;         /* Color gris suave */
+  cursor: pointer !important;     /* Manito al pasar */
+}
+
+.navbar-nav .popover-region .icon:hover {
+  color: #009B37 !important;      /* Naranja al pasar el mouse */
+}
+
+/* Contenedor del menú */
+.moremenu .nav-tabs {
+  background: #009B37;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.moremenu .nav-tabs .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+.moremenu .nav-tabs .nav-link:hover {
+  background: #30A841 !important;
+  color: #Fff !important; 
+}
+
+/* Pestaña activa */
+.moremenu .nav-tabs .nav-link.active {
+  background: #30A841;
+  color: #FFf !important;
+  font-weight: bold;
 }
