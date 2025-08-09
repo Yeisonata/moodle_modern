@@ -5,11 +5,15 @@
 # EXCEPCIONES (permitir estos archivos y carpetas)
 # ======================
 
-# Mantener carpeta de temas y el tema Modern
+# Mantener carpeta de temas y los temas Modern y Pino Verde
 !theme/
 !theme/modern/
 !theme/modern/**
 !theme/modern/**/.gitkeep
+
+!theme/pino_verde/
+!theme/pino_verde/**
+!theme/pino_verde/**/.gitkeep
 
 # Mantener estos archivos raíz
 !.gitignore

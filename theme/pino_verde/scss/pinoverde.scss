@@ -1,0 +1,87 @@
+
+html, body {
+    font-family: "Inter", sans-serif !important;
+}
+$azul :#004080;
+$blanco:#fff;
+$azul_claro: #0066cc;
+$verde:#009B37;
+
+.mi-imagen {
+  width: 260px;
+    height: 62px; 
+    margin-right: 10px;;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: $azul !important; 
+    color: $blanco;
+}
+.navbar-nav .dropdown-menu{
+     background-color: $azul !important;
+    color: $blanco;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem 0;
+}
+
+
+.navbar a, .navbar .sitename {
+    color: $blanco !important;
+}
+
+
+.dropdown-menu {
+    background-color: $azul !important; 
+    color: $blanco;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem 0;
+}
+
+
+.dropdown-menu .dropdown-item {
+    color: $blanco;
+    padding: 0.5rem 1rem;
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: $azul_claro  !important; 
+}
+
+
+.navbar .dropdown-menu .dropdown-divider {
+    border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+
+.dropdown-menu .menu-action-text {
+    font-weight: 500;
+}
+.card-body {
+    background-color: #f5f5f5;
+    color: #333; 
+    border-left: 6px solid #009B37; 
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 64, 128, 0.4);
+}
+
+
+.card-body h5,
+.card-body h4,
+.card-body h3 {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+
+.card-body a {
+    color: #333 !important;
+    text-decoration: underline;
+}
+.card-body a:hover {
+    color: #2CC36C !important;
+}
