@@ -1,5 +1,9 @@
 # Ignorar todo por defecto
 *
+# Permitir imágenes en la raíz
+!*.png
+!*.jpg
+!*.jpeg
 
 # ======================
 # EXCEPCIONES (permitir estos archivos y carpetas)
